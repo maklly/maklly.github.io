@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media (min-width: 46em){
+            @content
+        }
+    }
+}
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-bebas: 'Bebas Neue', sans-serif;
+
+$body-color: #FDFDFD;
+$body-color-main: #22222E;
+$main-color: #fff;
+$title-color: var(--greyscale-900, #1D3A70);
+$text-color: white;
+$footer-color: #f3f3f3;
+$items-color: var(--Color, #1DAB87);
+$shadows: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);

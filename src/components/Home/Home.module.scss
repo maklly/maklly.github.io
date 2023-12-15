@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+@import "../../styles/global";
+
+.home {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        text-align: center;
+
+        h1 {
+            color: black;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        span {
+            color: lightgray;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        p {
+            padding-top: 26px;
+            width: 400px;
+            color: black;
+            line-height: 137%;
+        }
+    }
+}
+
