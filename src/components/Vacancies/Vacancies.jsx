@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import classes from './Vacancies.module.scss';
 
 const Vacancies = () => {
-  // Приклад списку вакансій
   const [vacancies, setVacancies] = useState([
     { id: 1, title: 'Solo guitar', category: 'Guitar' },
     { id: 2, title: 'Drum', category: 'Drum' },
@@ -10,10 +9,8 @@ const Vacancies = () => {
     // Додайте інші вакансії за необхідності
   ]);
 
-  // Приклад списку категорій
-  const categories = ['All', 'Guitar', 'Vocal', 'Drum']; // Додайте більше категорій, якщо потрібно
+  const categories = ['All', 'Guitar', 'Vocal', 'Drum'];
 
-  // Фільтрація вакансій за категорією
   const [selectedCategory, setSelectedCategory] = useState('All');
   const filteredVacancies = selectedCategory === 'All' ? vacancies : vacancies.filter(vacancy => vacancy.category === selectedCategory);
 
