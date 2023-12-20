@@ -47,10 +47,10 @@ const Header = () => {
                 >
                     <ul className={classes.header__content__list}>
                         <li className={classes.header__content__item}>
-                            <Link to="#" className={classes.header__content__link}>Vacancies</Link>
+                            <Link to="/vacancies" className={classes.header__content__link}>Vacancies</Link>
                         </li>
                         <li className={classes.header__content__item}>
-                            <Link to="#" className={classes.header__content__link}>Message</Link>
+                            <Link to="/direct" className={classes.header__content__link}>Message</Link>
                         </li>
                         <li className={classes.header__content__item}>
                             <Link to="/login" className={classes.header__content__link}>Log in</Link>

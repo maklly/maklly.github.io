@@ -1,0 +1,164 @@
+.messenger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin-top: 80px;
+
+  &__direct {
+    width: 25%;
+    height: 100%;
+    background: lightgray;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+
+        &.active {
+          font-weight: bold;
+          text-decoration: underline;
+          background: #f0f0f0;
+        }
+
+        &:hover {
+          background: #f0f0f0;
+        }
+      }
+    }
+
+    &__user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &.activeText {
+        background: gray;
+      }
+
+      &:hover {
+        background: #f0f0f0;
+      }
+    }
+
+    &__info {
+        h4, p {
+          margin: 0;
+          font-size: 0.9rem;
+        }
+    }
+
+    &__time {
+        margin-left: auto;
+        font-size: 0.8rem;
+    }
+
+    &__av {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: red;
+        margin-right: 10px;
+      }
+  }
+
+  &__content {
+    flex: 1;
+    height: 100%;
+    padding: 20px;
+    background: lightblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .dialog {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      &Header {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+
+        h2 {
+          margin: 0;
+        }
+      }
+
+      &Content {
+        flex: 1;
+        overflow-y: auto;
+      }
+
+      &Input {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        textarea {
+          flex: 1;
+          height: 40px;
+          padding: 8px;
+          margin-right: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 0.9rem;
+
+          &:focus {
+            outline: none;
+            border-color: #4CAF50;
+          }
+        }
+
+        button {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 0.9rem;
+
+          &:hover {
+            background-color: #45a049;
+          }
+        }
+      }
+
+      .message {
+        flex: 1;
+        overflow-y: auto;
+        display: flex;
+        margin-bottom: 10px;
+
+        .messageAvatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: gray;
+          margin-right: 10px;
+        }
+
+        .messageText {
+            margin: 0;
+            padding: 8px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            max-width: 70%;
+        }
+      }
+    }
+  }
+}
+
