@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@microsoft/signalr": "^8.0.0",
     "@react-oauth/google": "^0.2.6",
     "@tailwindcss/forms": "0.4.0",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^1.6.3",
+    "cors": "^2.8.5",
     "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-datepicker": "^4.5.0",
@@ -17,7 +20,10 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
     "sass": "^1.69.5",
-    "web-vitals": "^2.1.0"
+    "signalr": "^2.4.3",
+    "typescript": "^5.3.3",
+    "web-vitals": "^2.1.0",
+    "yarn": "^1.22.21"
   },
   "scripts": {
     "start": "react-scripts start",
